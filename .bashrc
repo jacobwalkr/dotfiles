@@ -131,8 +131,8 @@ fi
 # rbenv
 eval "$(rbenv init -)"
 
-# git-aware prompt
-export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+# Borrowed from git-aware-prompt and mangled
+export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\[\033[1;34m\]$(date +%H:%M)\[\033[0;0m\] $ "
 
 # Git prompt config
 GIT_PROMPT_ONLY_IN_REPO=1
