@@ -5,6 +5,7 @@ execute pathogen#infect()
 " Settings for airline
 set laststatus=2 timeoutlen=350 noshowmode
 let g:airline_theme='papercolor'
+let g:airline_powerline_fonts = 1
 
 " Editor colours
 syntax on
@@ -14,6 +15,9 @@ let &background = "light"
 " Tab settings
 set ai ts=4 softtabstop=4 et sw=4 nu
 autocmd Filetype c setlocal noet ts=4 softtabstop=4 sw=4
+
+" Ctrl-P settings
+let g:ctrlp_show_hidden = 1
 
 " Misc. settings
 set splitright splitbelow
