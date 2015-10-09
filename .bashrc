@@ -70,6 +70,9 @@ fi
 # rbenv
 eval "$(rbenv init -)"
 
+# thefuck (for fixing dodgy commands on a monday morning)
+eval "$(thefuck --alias)"
+
 # Borrowed from git-aware-prompt and mangled
 export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\n\[\033[1;34m\]\D{%H:%M}\[\033[0;0m\] $ "
 
