@@ -82,3 +82,7 @@ GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
 GIT_PROMPT_THEME=Solarized
 source ~/.bash/bash-git-prompt/gitprompt.sh
 
+if [ -f ~/.bashrc_local ]; then
+    source ~/.bashrc_local
+fi
+
