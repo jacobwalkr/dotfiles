@@ -13,14 +13,21 @@ colors PaperColor
 let &background = "light"
 
 " Tab settings
-set ai ts=4 softtabstop=4 et sw=4 nu
-autocmd Filetype c setlocal noet ts=4 softtabstop=4 sw=4
+" Default: use 4-column-wide tabs
+set autoindent tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+" For C (specifically), GNU-style: 4-column-wide tabs
+autocmd Filetype c setlocal ts=4 sts=4 sw=4 noet
+" For HTML, JS and Ruby: 2-column expanded tabs
+au Filetype html,javascript,ruby setl ts=2 sts=2 sw=2 et
+" For Python, as in PEP-8: 4-column expanded tabs
+au Filetype python setl ts=4 sts=4 sw=4 et
 
 " Ctrl-P settings
 let g:ctrlp_show_hidden = 1
 
 " Misc. settings
 set splitright splitbelow
+set number
 
 " Key maps
 let mapleader='\'
