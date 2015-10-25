@@ -10,6 +10,7 @@ let g:airline_powerline_fonts = 1
 " Editor colours
 syntax on
 colors PaperColor
+set cursorline
 let &background = "light"
 
 " Tab settings
