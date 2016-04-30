@@ -9,9 +9,10 @@ let g:airline_powerline_fonts = 1
 
 " Editor colours
 syntax on
-colors PaperColor
+let base16colorspace=256
+let &background = "dark"
+colors base16-ocean
 set cursorline
-let &background = "light"
 
 " Tab settings
 " Default: use 4-column-wide tabs
