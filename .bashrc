@@ -30,6 +30,10 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.bash/base16-shell/base16-ocean.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
 TERM=xterm-256color
 export TERM
 
