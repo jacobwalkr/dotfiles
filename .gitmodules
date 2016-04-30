@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/rust"]
 	path = .vim/bundle/rust
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule ".bash/base16-shell"]
+	path = .bash/base16-shell
+	url = git@github.com:chriskempson/base16-shell.git
