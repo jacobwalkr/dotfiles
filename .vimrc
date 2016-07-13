@@ -27,6 +27,9 @@ au Filetype python setl ts=4 sts=4 sw=4 et
 " Ctrl-P settings
 let g:ctrlp_show_hidden = 1
 
+" NERDTree settings
+let NERDTreeIgnore = ['\.pyc$']
+
 " Misc. settings
 set splitright splitbelow
 set number
